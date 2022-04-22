@@ -7,12 +7,12 @@ let elCelciusResult = document.querySelector('.result-celsius');
  elCelsiusInput.addEventListener('input', function(){
   let elFahrenheitResult = parseFloat(elCelsiusInput.value.trim(), 10) * 9/5 + 32;
   elFahrenheitinput.value = elFahrenheitResult;
-  elCelciusResult.textContent = elCelsiusInput.value + '°C×9/5+32 =' + elFahrenheitResult;
+  elCelciusResult.textContent = elCelsiusInput.value + '°C =' + elFahrenheitResult;
  });
 
 
  elFahrenheitinput.addEventListener('input', function(){
   let elCelsiusResult = (parseFloat(elFahrenheitinput.value.trim(), 10)- 32 ) * 5/9;
   elCelsiusInput.value = elCelsiusResult;
-  elCelciusResult.textContent = '(' + elFahrenheitinput.value + '°F-32)×5/9 =' + elCelsiusResult;
+  elCelciusResult.textContent = '(' + elFahrenheitinput.value + '°F =' + elCelsiusResult;
  })
